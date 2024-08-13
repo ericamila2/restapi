@@ -1,9 +1,10 @@
 spring:
   datasource:
-    url: jdbc:postgresql://postgres:zGApFEIpFjGNlbfdyyaDfBNVGqVqhiib@:5432/railway
-    username: postgres
-    password: zGApFEIpFjGNlbfdyyaDfBNVGqVqhiib
+    url: jdbc:postgresql://postgres:OCGtavmhUeSweKkqoIHylMOZZcLJxLAf@roundhouse.proxy.rlwy.net:12400/railway
+    #url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
   jpa:
     open-in-view: false
     hibernate:
-      ddl-auto: create
+      ddl-auto: create # validate | update | create | create-drop
