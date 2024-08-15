@@ -1,11 +1,13 @@
 package dio.restapi2.repository;
 
-import dio.restapi2.model.User;
+import dio.restapi2.model.Holder;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface HolderRepository extends JpaRepository<Holder, Long> {
 
     boolean existsByAccountNumber(String accountNumber);
+
+    boolean existsByCardNumber(String number);
 }

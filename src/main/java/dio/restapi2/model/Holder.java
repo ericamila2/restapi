@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity(name = "tb_user")
-public class User {
+public class Holder {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
